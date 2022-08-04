@@ -13,7 +13,7 @@ body {
 }
 
 .calculator {
-  width: 85%;
+  width: 90%;
   background-color: black;
   border-radius: 30px;
   padding: 5px;
@@ -86,24 +86,24 @@ body {
 
 @media all and (min-width: 640px) {
   .calculator {
-    width: 60%;
+    width: 55%;
   }
 }
 
 @media all and (min-width: 768px) {
   .calculator {
-    width: 45%;
+    width: 40%;
   }
 }
 
 @media all and (min-width: 1024px) {
   .calculator {
-    width: 35%;
+    width: 30%;
   }
 }
 
 @media all and (min-width: 1280px) {
   .calculator {
-    width: 25%;
+    width: 20%;
   }
 }
