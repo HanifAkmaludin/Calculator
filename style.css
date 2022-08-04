@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 85%;
+  background-color: black;
+  border-radius: 30px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.calculator .calculator-screen {
+  width: 100%;
+  text-align: right;
+  padding: 70px 10px 0px 0px;
+  font-size: 60px;
+  border-radius: 20px 20px 0px 0px;
+  border: none;
+  background-color: black;
+  color: rgb(248, 248, 248);
+}
+
+.calculator .row {
+  width: 100%;
+  display: flex;
+}
+
+.calculator .row button {
+  width: 25%;
+  border: none;
+  height: 75px;
+  border-radius: 50%;
+  background-color: rgb(175, 175, 175);
+  font-size: 25px;
+  margin: 5px;
+}
+
+.calculator .row .operator,
+.calculator .row .samaDengan {
+  background-color: rgb(252, 158, 2);
+  color: white;
+  font-weight: bold;
+}
+
+.calculator .row .number,
+.calculator .row .decimal {
+  background-color: rgb(42, 42, 42);
+  color: white;
+}
+
+.calculator .row .zero {
+  width: 50%;
+  background-color: rgb(42, 42, 42);
+  border-radius: 70px;
+  color: white;
+}
+
+.calculator .row .number:hover,
+.calculator .row .decimal:hover,
+.calculator .row .numberZero:hover {
+  background-color: rgba(42, 42, 42, 0.8);
+}
+
+.calculator .row .operator:hover,
+.calculator .row .samaDengan:hover {
+  background-color: rgba(252, 158, 2, 0.8);
+}
+
+.calculator .row .clear:hover,
+.calculator .row .modulus:hover,
+.calculator .row .delete:hover,
+.calculator .persen:hover {
+  background-color: rgba(175, 175, 175, 0.8);
+}
+
+@media all and (min-width: 640px) {
+  .calculator {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .calculator {
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .calculator {
+    width: 35%;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .calculator {
+    width: 25%;
+  }
+}
